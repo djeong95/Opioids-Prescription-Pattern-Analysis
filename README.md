@@ -6,10 +6,12 @@ Opioid-related overdoses/deaths have increased exponentially in the United State
 - The second wave starting in 2010 was attributed to a rise in heroin-related opioid overdoses/deaths. 
 - The third wave starting in 2013 was attributed to the rise in synthetic opioid-related overdoses/deaths. The overdoses/deaths caused from commonly prescribed opioids remain consistently elevated along with overdoses/deaths from heroin.
 
-<figure>
+<p align="center">
   <img src="https://www.cdc.gov/drugoverdose/images/3Wave_OverdoesDeathRates_LineGraph_2020-large.png" width="700" height="400" alt="my alt text"/>
-  <figcaption>Figure 1 Source: CDC: https://www.cdc.gov/opioids/basics/epidemic.html</figcaption>
-</figure>
+</p>
+
+<h5 align="center">Figure 1 Source: CDC: https://www.cdc.gov/opioids/basics/epidemic.html</h5>
+
 <br /><br />
 
 Understanding the prescriber characteristics and practices leading to prescription of various drugs might be instrumental in forming a systematic strategy to prevent opioid-related overdoses/deaths. This project aims to study the opioids prescribing patterns among physicians across the US using a [U.S. Opiate Prescriptions Kaggle dataset from 2014](https://www.kaggle.com/datasets/apryor6/us-opiate-prescriptions). Our primary research question is whether we can predict frequent opioid prescribers based on a combination of physician characteristics and their prescribing pattern. This way, we can assess which medical treatments have the highest likelihood of being prescribed opioids and may put patients at risk of developing addiction to opioids.
