@@ -18,9 +18,8 @@ The main goals of the project are:
 1. To find important features of medical practitioners who prescribe opioids. This will be a challenge due to the number of drugs and medical specialties included in the prescribing data.
 2. Develop a classifier to predict if a given medical practitioner frequently prescribes opioids (defined as more than 10 times a year).
 
+For Exploratory Data Analysis, click on this file:
 
+For Modeling, click on this file:
 
-
-https://www.kaggle.com/code/greenmaverick/exploratory-analysis-on-opioid-prescriptions
-
-https://docs.google.com/document/d/1d0aC3nWJsbeSsorGsuivbOfUzP14ThwWDh8WhhcaxbQ/edit#
+For full report, click here: https://docs.google.com/document/d/1d0aC3nWJsbeSsorGsuivbOfUzP14ThwWDh8WhhcaxbQ/edit?usp=sharing
