@@ -18,7 +18,7 @@ The main goals of the project are:
 1. To find important features of medical practitioners who prescribe opioids. This will be a challenge due to the number of drugs and medical specialties included in the prescribing data.
 2. Develop a classifier to predict if a given medical practitioner frequently prescribes opioids (defined as more than 10 times a year).
 
-For Exploratory Data Analysis, click on this file:
+For Exploratory Data Analysis, click on this file: [EDA prescribers by state and specialty.ipynb](https://github.com/djeong95/Opioids-Prescription-Pattern-Analysis/blob/main/EDA%20prescribers%20by%20state%20and%20specialty.ipynb)
 
 For Modeling, click on this file:
 
