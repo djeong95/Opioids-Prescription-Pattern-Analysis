@@ -22,6 +22,11 @@ For Exploratory Data Analysis, click on this file: [EDA prescribers by state and
 
 For Modeling, click on this file:
 
+## Discussions from EDA
+
+## Discussions from Modeling
+
+
 ## Conclusion
 
 For full report, click here: https://docs.google.com/document/d/1d0aC3nWJsbeSsorGsuivbOfUzP14ThwWDh8WhhcaxbQ/edit?usp=sharing
