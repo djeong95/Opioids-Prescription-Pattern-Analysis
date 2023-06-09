@@ -57,4 +57,10 @@ Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost - TB
 
 ## Conclusion
 
-For full report, click here: https://docs.google.com/document/d/1d0aC3nWJsbeSsorGsuivbOfUzP14ThwWDh8WhhcaxbQ/edit?usp=sharing
+The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction.
+
+The 5 opioids worth closer monitoring are oxycodone acetaminophen, hydrocodone acetaminophen, acetaminophen codeine, oxycodone hcl, and tramadol hcl, as those 5 opioids were not only considered important features by random forest, but also contributed significantly in improving model accuracy.
+
+Interestingly, 6 antibiotics are featured heavily on the important features list, which are amoxicillin, ciprofloxacin hcl, cephalexin, azithromycin, clindamycin hcl, and levofloxacin. Among all the drugs in the dataset, amoxicillin was noteworthy, since it was considered the important by random forest. It is a penicillin antibiotic. It is used to treat bacterial infections, such as chest infections (including pneumonia) and dental abscesses. It can also be used together with other antibiotics and medicines to treat stomach ulcers. It would be very interesting to do a deeper dive into these drugs in terms of subject matter to gain a better understanding of who prescribes these drugs the most.
+
+Specialties with high importance in our model, namely emergency medicine, general surgery, orthopedic surgery, and Psychiatry might benefit from further efforts in educating prescribers on the dangers of over-prescribing opioids, and perhaps closer monitoring of their prescribing pattern. It is also possible that individual drugs that are strong detectors may indicate specialties or sub-specialties of individual prescribers that could be of interest, or perhaps even reveal hidden avenues of illegitimate drug access.
