@@ -24,6 +24,12 @@ For Modeling, click on this file:
 
 ## Discussions from EDA
 
+Notable findings:
+1. Family Medicine, Internal Medicine, Nurse, Physician Assistant, Dentist, Emergency Medicine, Orthopedia Surgery, General Surgery, Oncology, Neurology were top 10 speciaties in terms of having the most number of frequent opioids prescribers.
+2. California, New York, Florida, Texas, Pennsylvania, Illinois, Ohio, Michigan, North Carolina, and Massachusetts were top 10 states in terms of having the most number of frequent opioids prescribers.
+3. West Virginia, New Mexico, New Hampshire, Kentucky, Ohio, Rhode Island, Pennsylvania, Utah, Delaware, and Oklahoma were top 10 states in terms of having the most overdose deaths from opioids.
+4. ['HYDROCODONE.ACETAMINOPHEN', 'LISINOPRIL', 'OMEPRAZOLE', 'AMLODIPINE.BESYLATE', 'GABAPENTIN', 'ATORVASTATIN.CALCIUM', 'FUROSEMIDE', 'LEVOTHYROXINE.SODIUM', 'SIMVASTATIN', 'METOPROLOL.TARTRATE', 'HYDROCHLOROTHIAZIDE'] are among the most prescribed drugs out of the 250 drugs in the dataset. Only 1 is an opioid - HYDROCODONE.ACETAMINOPHEN.
+
 ## Discussions from Modeling
 
 Notable findings:
@@ -41,6 +47,7 @@ Notable findings:
 5. Imporant speciaties are:  [(40, 'State_NY'), (45, 'State_FL'), (50, 'State_CA'), (61, 'State_TX'), (68, 'State_PA'), (77, 'State_MI'), (84, 'State_IL'), (87, 'State_OH'), (95, 'State_GA'), (100, 'State_NC')]
     * State and Gender did not appear to be that important when it came to predicting opioids prescribers.
     * Note that only Pennsylvania and Ohio were among the top 10 variables for states. Those two states were also among the highest overdose from opioids. New York, Florida, California were not on that list. Perhaps where the frequent prescribers are might not be important when it comes to opioids abuse. This might also be because the states listed above are among more populous states.
+    * Top 10 states for having the most number of frequent opioids prescribers are identical to the list above, except some of the orderings.
 6. Imporant genders are:  [(48, 'Gender_M'), (51, 'Gender_F')]
 
 
