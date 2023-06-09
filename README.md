@@ -53,6 +53,7 @@ Notable findings:
     * Top 10 states for having the most number of frequent opioids prescribers are identical to the list above, except some of the orderings.
 6. Imporant genders are:  [(48, 'Gender_M'), (51, 'Gender_F')]
 
+Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost - TBD
 
 ## Conclusion
 
