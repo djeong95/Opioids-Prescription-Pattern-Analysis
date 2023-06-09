@@ -26,8 +26,11 @@ For Modeling, click on this file:
 
 Notable findings:
 1. Family Medicine, Internal Medicine, Nurse, Physician Assistant, Dentist, Emergency Medicine, Orthopedia Surgery, General Surgery, Oncology, Neurology were top 10 speciaties in terms of having the most number of frequent opioids prescribers.
+
 2. California, New York, Florida, Texas, Pennsylvania, Illinois, Ohio, Michigan, North Carolina, and Massachusetts were top 10 states in terms of having the most number of frequent opioids prescribers.
+
 3. West Virginia, New Mexico, New Hampshire, Kentucky, Ohio, Rhode Island, Pennsylvania, Utah, Delaware, and Oklahoma were top 10 states in terms of having the most overdose deaths from opioids.
+
 4. ['HYDROCODONE.ACETAMINOPHEN', 'LISINOPRIL', 'OMEPRAZOLE', 'AMLODIPINE.BESYLATE', 'GABAPENTIN', 'ATORVASTATIN.CALCIUM', 'FUROSEMIDE', 'LEVOTHYROXINE.SODIUM', 'SIMVASTATIN', 'METOPROLOL.TARTRATE', 'HYDROCHLOROTHIAZIDE'] are among the most prescribed drugs out of the 250 drugs in the dataset. Only 1 is an opioid - HYDROCODONE.ACETAMINOPHEN.
 
 ## Discussions from Modeling
