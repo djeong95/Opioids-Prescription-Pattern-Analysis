@@ -61,18 +61,18 @@ Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost
 | Feature-selected Logistic Regression    | 0.867   | 0.847     | 0.784  | 0.814    | 0.794 |
 | PCA Logistic Regression                 | 0.809   | 0.842     | 0.817  | 0.829    | 0.802 |
 | Feature-selected Support Vector Machine | 0.792   | 0.838     | 0.806  | 0.822    | 0.795 |
-| PCA Support Vector Machine              | -       | -         | -      | -        | -     |
+| PCA Support Vector Machine              | 0.730   | 0.729     | 0.860  | 0.789    | 0.709 |
 | Feature-selected K-Nearest Neighbors    | 0.871   | 0.839     | 0.779  | 0.808    | 0.786 |
 | PCA K-Nearest Neighbors                 | 0.85    | 0.819     | 0.777  | 0.798    | 0.77  |
 | Feature-selected Random Forest          | 0.791   | 0.809     | 0.839  | 0.824    | 0.782 |
 | PCA Random Forest                       | 0.815   | 0.826     | 0.864  | 0.845    | 0.806 |
-| Feature-selected XGBoost                | -       | -         | -      | -        | -     |
-| PCA XGBoost                             | -       | -         | -      | -        | -     |
+| Feature-selected XGBoost                | 0.834   | 0.869     | 0.840  | 0.854    | 0.832 |
+| PCA XGBoost                             | 0.827   | 0.848     | 0.855  | 0.852    | 0.821 |
 
 
 ## Conclusion
 
-The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction because the model training time was a fraction for that model compared to those of other models. However, for model performance, feature-selected Logistic Regression or PCA Random Forest are recommended.
+The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction because the model training time was a fraction for that model compared to those of other models. However, for model performance, feature-selected Logistic Regression, PCA Random Forest, or Feature-selected XGBoost are recommended. XGBoost took about 7 hours to compute on average.
 
 The 5 opioids worth closer monitoring are oxycodone acetaminophen, hydrocodone acetaminophen, acetaminophen codeine, oxycodone hcl, and tramadol hcl, as those 5 opioids were not only considered important features by random forest, but also contributed significantly in improving model accuracy.
 
