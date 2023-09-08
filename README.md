@@ -38,26 +38,41 @@ Notable findings:
 Notable findings:
 1. These are the important drugs in descending order [(0, 'HYDROCODONE.ACETAMINOPHEN'), (1, 'OXYCODONE.ACETAMINOPHEN'), (2, 'TRAMADOL.HCL'), (3, 'OXYCODONE.HCL'), (4, 'ACETAMINOPHEN.CODEINE')]. 
     * Random Forest's Variable Importance revealed that all of the opioids in the dataset (which are the listed 5) are top 5 most important variables.
-2. The top 15 variables when you take out opioids are: ['AMOXICILLIN', 'Specialty_Emergency Medicine', 'GABAPENTIN', 'PREDNISONE', 'LEVOTHYROXINE.SODIUM', 'MELOXICAM', 'OMEPRAZOLE', 'CIPROFLOXACIN.HCL', 'CEPHALEXIN', 'IBUPROFEN', 'Specialty_Orthopedic Surgery', 'METFORMIN.HCL', 'Specialty_General Surgery', 'LISINOPRIL', 'Specialty_Psychiatry']
+      
+2. The top 15 variables when you take out opioids are: ['GABAPENTIN', 'LEVOTHYROXINE.SODIUM', 'AMOXICILLIN', 'Specialty_Emergency Medicine', 'MELOXICAM', 'PREDNISONE', 'METFORMIN.HCL', 'OMEPRAZOLE', 'CIPROFLOXACIN.HCL', 'Specialty_Orthopedic Surgery', 'Specialty_Psychiatry', 'CEPHALEXIN', 'Specialty_General Surgery', 'IBUPROFEN', 'TAMSULOSIN.HCL']
     * Emergency Medicine stood out among other specialties, like Orthopedic Surgery, General Surgery, and Psychiatry, to be an important characteristic when it came to predicting frequent opioids prescribers. 
 
 3. These are the important drug variables in descending order [(0, 'AMOXICILLIN'), (2, 'GABAPENTIN'), (3, 'PREDNISONE'), (4, 'LEVOTHYROXINE.SODIUM'), (5, 'MELOXICAM'), (6, 'OMEPRAZOLE'), (7, 'CIPROFLOXACIN.HCL'), (8, 'CEPHALEXIN'), (9, 'IBUPROFEN'), (11, 'METFORMIN.HCL')]
     * Subject matter expertise might be necessary to gain a deeper understanding of what these drugs might be used for and why they are considered important.
 
-4. Imporant speciaties are:  [(1, 'Specialty_Emergency Medicine'), (10, 'Specialty_Orthopedic Surgery'), (12, 'Specialty_General Surgery'), (14, 'Specialty_Psychiatry'), (34, 'Specialty_Physician Assistant'), (38, 'Specialty_Optometry'), (46, 'Specialty_Oncology'), (47, 'Specialty_Dentist'), (69, 'Specialty_Internal Medicine'), (70, 'Specialty_Nurse')]
-    * After Psychiatry (being number 15 most important), specialty falls off the radar.
+4. Imporant speciaties are:  [(3, 'Specialty_Emergency Medicine'), (9, 'Specialty_Orthopedic Surgery'), (10, 'Specialty_Psychiatry'), (12, 'Specialty_General Surgery'), (25, 'Specialty_Physician Assistant'), (29, 'Specialty_Oncology'), (35, 'Specialty_Optometry'), (46, 'Specialty_Dentist'), (51, 'Specialty_Oral Surgery'), (58, 'Specialty_Nurse')]
+    * After General Surgury (being number 12 most important), specialty falls off the radar.
 
-5. Imporant speciaties are:  [(40, 'State_NY'), (45, 'State_FL'), (50, 'State_CA'), (61, 'State_TX'), (68, 'State_PA'), (77, 'State_MI'), (84, 'State_IL'), (87, 'State_OH'), (95, 'State_GA'), (100, 'State_NC')]
+5. Imporant states are:  [(33, 'State_NY'), (34, 'State_FL'), (40, 'State_CA'), (50, 'State_TX'), (52, 'State_PA'), (59, 'State_MI'), (61, 'State_IL'), (67, 'State_OH'), (71, 'State_GA'), (79, 'State_NC')]
     * State and Gender did not appear to be that important when it came to predicting opioids prescribers.
     * Note that only Pennsylvania and Ohio were among the top 10 variables for states. Those two states were also among the highest overdose from opioids. New York, Florida, California were not on that list. Perhaps where the frequent prescribers are might not be important when it comes to opioids abuse. This might also be because the states listed above are among more populous states.
     * Top 10 states for having the most number of frequent opioids prescribers are identical to the list above, except some of the orderings.
-6. Imporant genders are:  [(48, 'Gender_M'), (51, 'Gender_F')]
+6. Imporant genders are:  [(44, 'Gender_M'), (45, 'Gender_F')]
 
-Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost - TBD
+Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost
+
+| Model                                   | Accuracy | Precision | Recall | F1 Score | AUC   |
+|-----------------------------------------|----------|-----------|--------|----------|-------|
+| Feature-selected Logistic Regression    | 0.867   | 0.847     | 0.784  | 0.814    | 0.794 |
+| PCA Logistic Regression                 | 0.809   | 0.842     | 0.817  | 0.829    | 0.802 |
+| Feature-selected Support Vector Machine | 0.792   | 0.838     | 0.806  | 0.822    | 0.795 |
+| PCA Support Vector Machine              | -       | -         | -      | -        | -     |
+| Feature-selected K-Nearest Neighbors    | 0.871   | 0.839     | 0.779  | 0.808    | 0.786 |
+| PCA K-Nearest Neighbors                 | 0.85    | 0.819     | 0.777  | 0.798    | 0.77  |
+| Feature-selected Random Forest          | 0.791   | 0.809     | 0.839  | 0.824    | 0.782 |
+| PCA Random Forest                       | 0.815   | 0.826     | 0.864  | 0.845    | 0.806 |
+| Feature-selected XGBoost                | -       | -         | -      | -        | -     |
+| PCA XGBoost                             | -       | -         | -      | -        | -     |
+
 
 ## Conclusion
 
-The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction.
+The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction because the model training time was a fraction for that model compared to those of other models.
 
 The 5 opioids worth closer monitoring are oxycodone acetaminophen, hydrocodone acetaminophen, acetaminophen codeine, oxycodone hcl, and tramadol hcl, as those 5 opioids were not only considered important features by random forest, but also contributed significantly in improving model accuracy.
 
