@@ -62,11 +62,11 @@ Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost
 | PCA Logistic Regression                 | 0.809   | 0.842     | 0.817  | 0.829    | 0.802 |
 | Feature-selected Support Vector Machine | 0.792   | 0.838     | 0.806  | 0.822    | 0.795 |
 | PCA Support Vector Machine              | 0.730   | 0.729     | 0.860  | 0.789    | 0.709 |
-| Feature-selected K-Nearest Neighbors    | 0.871   | 0.839     | 0.779  | 0.808    | 0.786 |
-| PCA K-Nearest Neighbors                 | 0.85    | 0.819     | 0.777  | 0.798    | 0.77  |
+| **Feature-selected K-Nearest Neighbors** (Recommended)    | 0.871   | 0.839     | 0.779  | 0.808    | 0.786 |
+| PCA K-Nearest Neighbors                 | 0.850   | 0.819     | 0.777  | 0.798    | 0.770 |
 | Feature-selected Random Forest          | 0.791   | 0.809     | 0.839  | 0.824    | 0.782 |
 | PCA Random Forest                       | 0.815   | 0.826     | 0.864  | 0.845    | 0.806 |
-| Feature-selected XGBoost                | 0.834   | 0.869     | 0.840  | 0.854    | 0.832 |
+| **Feature-selected XGBoost** (Recommended)               | 0.834   | 0.869     | 0.840  | 0.854    | 0.832 |
 | PCA XGBoost                             | 0.827   | 0.848     | 0.855  | 0.852    | 0.821 |
 
 
