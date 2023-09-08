@@ -72,7 +72,7 @@ Best performing model out of Logistic Regression, SVM, KNN, RF, and XGBoost
 
 ## Conclusion
 
-The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction because the model training time was a fraction for that model compared to those of other models.
+The recommendation for any governmental agency interested in investigating opioid prescribing patterns is to use k-nearest neighbor model paired with feature selection or dimensionality reduction because the model training time was a fraction for that model compared to those of other models. However, for model performance, feature-selected Logistic Regression or PCA Random Forest are recommended.
 
 The 5 opioids worth closer monitoring are oxycodone acetaminophen, hydrocodone acetaminophen, acetaminophen codeine, oxycodone hcl, and tramadol hcl, as those 5 opioids were not only considered important features by random forest, but also contributed significantly in improving model accuracy.
 
